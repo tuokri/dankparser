@@ -1,5 +1,3 @@
-"""Docstring."""
-
 import re
 import sys
 import urllib.request
@@ -8,10 +6,11 @@ from html.parser import HTMLParser
 
 class TwitchQuoteParser(HTMLParser):
     def __init__(self):
-        HTMLParser.__init__(self)
+        super(TwitchQuoteParser, self).__init__()
         self.data = []
         self.recording = 0
-        # quote_clipboard_copy_content_X
+        # The data we want is inside tags of following pattern:
+        # <span id="quote_clipboard_copy_content_X">
         self.pattern = re.compile("quote_clipboard_copy_content_\.*")
 
     def handle_starttag(self, tag, attrs):
@@ -47,12 +46,15 @@ def write_results(filename, results):
 
 
 def strip_nlcr(string):
-    string = string.replace("\n", "")
     string = string.replace("\t", "")
+    string = string.replace("\r", "")
+    string = string.replace("\n", "")
     return string
 
 
 def get_twitchquotes_urls():
+    """Forgive me for this function. Returns a list of twitchquotes urls."""
+    
     urls = []
     base = "http://www.twitchquotes.com/copypastas?page=XXX&popular=true"
     for i in range(1, 114):
@@ -79,6 +81,7 @@ def main():
     print("Writing results to file '{}'.".format(outfile))
     write_results(outfile, parser.data)
     print("Done.\n")
+
 
 if __name__ == '__main__':
     try:
