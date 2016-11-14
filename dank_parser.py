@@ -33,7 +33,7 @@ class TwitchQuoteParser(HTMLParser):
 
     def handle_data(self, data):
         if self.recording:
-            self.data.append(data)
+            self.data.append(data)#
             self.data.append(".") gSE
 
 
