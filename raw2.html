@@ -1,0 +1,988 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Copypastas | TwitchQuotes</title>
+    <meta name="description" content="View the top voted copypastas by the community! TwitchQuotes is the leading database for Twitch chat quotes, copypastas, and ASCII art.">
+      <link rel="next" href="http://www.twitchquotes.com/copypastas?page=2&amp;popular=true" />
+    <!-- external fonts, css, and scripts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <!-- local assets -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e7202f41dc2440d035d1ef83fc7ada77ede5513dcd11a258ad3935c36e33a6fd.ico" />
+    <link rel="stylesheet" media="all" href="/assets/application-3624d50c7bec884f959e20b5dafd4fc6b1ea28137bd78d31d11dea0eb204ada8.css" />
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-48749842-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <!-- AdSense Page-level Ads -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-0144173183236578",
+        enable_page_level_ads: true
+      });
+    </script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="tDFOfqycLPO4UEV2/KJtqOR0xFx8xQ5QV9fovlphOt+ipKF4Zv282HxIJmmKztuI3FFBKy8h6wOKcjfkB/EMhw==" />
+  </head>
+  <body class="quotes_index">
+    <div class="tipsy">
+      <div class="tipsy-inner"></div>
+    </div>
+      <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="logo" href="/">TwitchQuotes</a>
+      <div class='navbar-text description hidden-xs'>1776 copypastas and counting</div>
+    </div>
+    <div class="collapse navbar-collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li>
+  <a id="profile-nav-li" class="nav-li-highlight hidden-sm" href="/submissions/new">
+    <span style="margin-left: 2px"><img src="https://static-cdn.jtvnw.net/emoticons/v1/64138/1.0" style="display: inline; width: 30px; margin-top: -20px; margin-bottom: -20px;"/> SUBMIT PASTA</span>
+</a></li>
+<li>
+  <a href="/quotes/search">
+    <span class="glyphicon glyphicon-search" title="Search"></span><span data-target=".navbar-collapse" class="navbar-toggle custom-navbar-toggle">Search</span>
+</a></li>
+<li>
+  <a href="/copypastas/ascii-art">
+    <span class="glyphicon glyphicon-picture" title="ASCII Art"></span><span data-target=".navbar-collapse" class="navbar-toggle custom-navbar-toggle">ASCII Art</span>
+</a></li>
+<li>
+  <a href="/streams">
+    <span class="glyphicon glyphicon-th-large" title="All Streams"></span><span data-target=".navbar-collapse" class="navbar-toggle custom-navbar-toggle">All Streams</span>
+</a></li>
+<li class="visible-xs">
+  <a href="/emoticons">
+    <span class="glyphicon glyphicon-th" title="Emotes"></span><span data-target=".navbar-collapse" class="navbar-toggle custom-navbar-toggle">Emotes</span>
+</a></li>
+<li>
+  <a href="/builder">
+    <span class="glyphicon glyphicon-pencil" title="Build"></span><span data-target=".navbar-collapse" class="navbar-toggle custom-navbar-toggle">Unicode Copypasta Builder</span>
+</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      </header>
+      <div class="container" id="main">
+        
+        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="sign_in_modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Please Sign In</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="alert alert-danger" role="alert" id="sign_in_modal_errors"></div>
+            <form action="/sessions" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+              <input type="text" name="email" id="email" placeholder="Email" />
+              <input type="password" name="password" id="password" placeholder="Password" />
+              <input type="hidden" name="remote" id="remote" value="true" />
+              <input type="submit" name="commit" value="Sign in" class="btn btn-default" id="modal_sign_in_button" />
+</form>          </div>
+          <div class="col-md-6">
+            <div class="alert alert-danger" role="alert" id="sign_up_modal_errors"></div>
+            <form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+              <input placeholder="Username" type="text" name="user[username]" id="user_username" />
+              <input placeholder="Email" type="text" name="user[email]" id="user_email" />
+              <input placeholder="Password" type="password" name="user[password]" id="user_password" />
+              <input placeholder="Password Confirmation" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+              <input type="hidden" name="remote" id="remote" value="true" />
+              <input type="submit" name="commit" value="Sign Up" class="btn btn-default" id="modal_sign_up_button" />
+</form>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="server_error_modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Sorry, server error!</h4>
+      </div>
+      <div class="modal-body" style="text-align: center">
+        ヽ༼ຈل͜ຈ༽ﾉ FIX OR RIOT!!! ヽ༼ຈل͜ຈ༽ﾉ
+      </div>
+    </div>
+  </div>
+</div>
+          
+  <div id="twitchquotes_header" class="jumbotron">
+    <h1>
+      <img width=42 style="display: inline" src="https://static-cdn.jtvnw.net/emoticons/v1/62841/1.0"> Twitch Chat Copypasta Database <img width=42 style="display: inline" src="https://static-cdn.jtvnw.net/emoticons/v1/62842/1.0">
+    </h1>
+    <p>Freshest and funniest copypastas, guaranteed!</p>
+    <p style="font-size: 15px; background-color: white; padding: 12px; margin-bottom: 0px">
+      <strong style="font-size: 20px">copypasta</strong> (kɒpiːpeɪstə) <i>noun.</i> <strong>1.</strong> A block of lengthy text that has been repeatedly copied from somewhere and pasted as a reply to an irrelevant subject. <strong>2.</strong> (<i>On twitch.tv</i>) Lengthy text that is mindlessly copypasted repeatedly in Twitch Chat, often to make fun of something through satire and repetition.
+    </p>
+  </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="row" style="margin-bottom: 10px">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="btn-group btn-group-justified" role="group">
+      <!-- latest -->
+      <div class="btn-group " role="group">
+        <a class="btn btn-default" href="/copypastas">
+          <span class="caret" aria-hidden="true"></span> Latest
+</a>      </div>
+      <!-- popular -->
+      <div class="btn-group" role="group">
+        <a class="btn btn-custom" title="Top copypastas by popular vote!" href="/copypastas">
+          <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Popular
+</a>      </div>
+      <!-- emoticons -->
+      <div class="btn-group hidden-xs" role="group">
+        <a class="btn btn-default" title="Twitch chat emoticons" href="/emoticons">
+          <span class="glyphicon glyphicon-th" aria-hidden="true"></span> Emotes
+</a>      </div>
+      <!-- ascii art -->
+      <div class="btn-group hidden-xs" role="group">
+        <a class="btn btn-default" href="/copypastas/ascii-art">
+          <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> ASCII Art
+</a>      </div>
+      <!-- search -->
+      <div class="btn-group hidden-xs" role="group">
+        <a class="btn btn-default" href="/quotes/search">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+</a>      </div>
+      <!-- random -->
+      <div class="btn-group" role="group">
+        <a class="btn btn-default" href="/random">
+          <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Random
+</a>      </div>
+    </div>
+  </div>
+</div>
+    <div class="row" style="margin-bottom: 15px">
+  <div class="quote_tags_main col-md-10 col-md-offset-1" style="text-align: center;">
+    <h2 class="label label-default quote_tag quote_tag_main" style="background-color: #866bb9">
+      <a class="quote_tag_link" href="/copypastas/labels">All</a>
+      <span class="badge"><span class="glyphicon glyphicon-th-list"></span></span>
+    </h2>
+    <h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/hearthstone">Hearthstone</a>
+   <span class="badge">121</span>
+</h2><h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/league-of-legends">League of Legends</a>
+   <span class="badge">70</span>
+</h2><h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/salty">salty</a>
+   <span class="badge">30</span>
+</h2><h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/plebs-vs-subs">plebs vs subs</a>
+   <span class="badge">24</span>
+</h2><h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/eu-vs-na">EU vs NA</a>
+   <span class="badge">23</span>
+</h2><h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/sellout">sellout</a>
+   <span class="badge">18</span>
+</h2><h2 class="label label-default quote_tag quote_tag_main">
+  <a class="quote_tag_link" href="/copypastas/labels/vapenation">VapeNation</a>
+   <span class="badge">13</span>
+</h2>
+  </div>
+</div>
+    <ul class="quotes">
+      
+      <li id="quote_li_0">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_0">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1655" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="0" />
+</form></div>
+
+  <div class="ip_vote_count">5113</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_0">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1655" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="0" />
+</form></div>
+
+    <div class="ip_vote_count">5113</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_0">
+              <span id="quote_display_content_0">UNROLL THE TADPOLE <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNCLOG THE FROG <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNLOAD THE TOAD <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNINHIBIT THE RIBBIT <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNSTICK THE LICK <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNIMPRISON THE AMPHIBIAN <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNMUTE THE NEWT <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNBENCH THE KENCH <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> PERMIT THE KERMIT <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> DEFOG THE POLLIWOG <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/></span>
+<span id="quote_clipboard_copy_content_0" style="display: none">UNROLL THE TADPOLE <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNCLOG THE FROG <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNLOAD THE TOAD <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNINHIBIT THE RIBBIT <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNSTICK THE LICK <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNIMPRISON THE AMPHIBIAN <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNMUTE THE NEWT <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> UNBENCH THE KENCH <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> PERMIT THE KERMIT <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/> DEFOG THE POLLIWOG <img class="emoticon" original-title="OSfrog" alt="OSfrog" data-emote="OSfrog" src="https://static-cdn.jtvnw.net/emoticons/v1/81248/1.0"/></span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="0" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1655">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/imaqtpie">imaqtpie</a>'s stream, posted on September 2015
+</div>
+<button class="quote_copy_button" data-quote-id="0">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_1">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_1">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/70433/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1774" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="1" />
+</form></div>
+
+  <div class="ip_vote_count">3262</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_1">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1774" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="1" />
+</form></div>
+
+    <div class="ip_vote_count">3262</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_1">
+              <span id="quote_display_content_1">O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A-JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA</span>
+<span id="quote_clipboard_copy_content_1" style="display: none">O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A-JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="1" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1774">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/Forsenlol">Forsenlol</a>'s stream, posted on March 2016
+</div>
+<button class="quote_copy_button" data-quote-id="1">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_2">
+      <div style="position: absolute; width: 100px; height: 100px; top: 0px; left: 20px" id="golden_kappa">
+        <img src="http://i.imgur.com/JwmYhu7.png" width=50 style="position: absolute; top: 50%; left: 50%; margin-top: -32.5px; margin-left: -25px"/>
+      </div>
+    <div class="list_quote_content_parent list_quote_ad_parent">
+        <div class="main_page_ad">
+  <div class="ad_block_alternative" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #866bb9; color: white; font-size: 20px; padding: 40px 10px 0 10px;">
+    (ง •̀_•́)ง ONE DAY I'LL BE A REAL AD (ง •̀_•́)ง
+  </div>
+  <div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- TwitchQuotes Main Page Resp -->
+    <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-0144173183236578"
+       data-ad-slot="6358548857"
+       data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+    </div>
+</li>
+<li id="quote_li_3">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_3">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1452" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="3" />
+</form></div>
+
+  <div class="ip_vote_count">3193</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_3">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/70433/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1452" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="3" />
+</form></div>
+
+    <div class="ip_vote_count">3193</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_3">
+              <span id="quote_display_content_3">╠═══╣Lets build a ladder╠═══╣</span>
+<span id="quote_clipboard_copy_content_3" style="display: none">╠═══╣Lets build a ladder╠═══╣</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="3" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1452">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/reynad27">reynad27</a>'s stream, posted on April 2015
+</div>
+<button class="quote_copy_button" data-quote-id="3">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_4">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_4">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1521" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="4" />
+</form></div>
+
+  <div class="ip_vote_count">3017</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_4">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1521" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="4" />
+</form></div>
+
+    <div class="ip_vote_count">3017</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_4">
+              <span id="quote_display_content_4">( ͡° ͜◯ ͡°) ﻿ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)</span>
+<span id="quote_clipboard_copy_content_4" style="display: none">( ͡° ͜◯ ͡°) ﻿ＣＬＯＷＮ ＦＩＥＳＴＡ ( ͡° ͜◯ ͡°)</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="4" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1521">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/Forsenlol">Forsenlol</a>'s stream, posted on June 2015
+</div>
+<button class="quote_copy_button" data-quote-id="4">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_5">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_5">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/70433/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="436" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="5" />
+</form></div>
+
+  <div class="ip_vote_count">2998</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_5">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="436" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="5" />
+</form></div>
+
+    <div class="ip_vote_count">2998</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+          <div class="quote_tags"><h2 class="label label-default quote_tag ">
+  <a class="quote_tag_link" href="/copypastas/labels/eu-vs-na">EU vs NA</a>
+  
+</h2><h2 class="label label-default quote_tag ">
+  <a class="quote_tag_link" href="/copypastas/labels/salty">salty</a>
+  
+</h2></div>
+
+
+
+      <div class="quote_text_area" id="quote_text_area_5">
+              <span id="quote_display_content_5">Sodium, atomic number 11, was first isolated by Humphry Davy in 1807. A chemical component of salt, he named it Na in honor of the saltiest region on earth, North America.</span>
+<span id="quote_clipboard_copy_content_5" style="display: none">Sodium, atomic number 11, was first isolated by Humphry Davy in 1807. A chemical component of salt, he named it Na in honor of the saltiest region on earth, North America.</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="5" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/436">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/Riot%20Games">Riot Games</a>'s stream, posted on October 2014
+</div>
+<button class="quote_copy_button" data-quote-id="5">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_6">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_6">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1720" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="6" />
+</form></div>
+
+  <div class="ip_vote_count">2714</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_6">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1720" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="6" />
+</form></div>
+
+    <div class="ip_vote_count">2714</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+          <div class="quote_tags"><h2 class="label label-default quote_tag ">
+  <a class="quote_tag_link" href="/copypastas/labels/eu-vs-na">EU vs NA</a>
+  
+</h2></div>
+
+
+
+      <div class="quote_text_area" id="quote_text_area_6">
+              <span id="quote_display_content_6"><img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> MY BELLY IS HUGE <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> MY BRAIN HAS DELAY <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> YOU GUESSED IT RIGHT <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> I'M FROM NA. <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/></span>
+<span id="quote_clipboard_copy_content_6" style="display: none"><img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> MY BELLY IS HUGE <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> MY BRAIN HAS DELAY <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> YOU GUESSED IT RIGHT <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/> I'M FROM NA. <img class="emoticon" original-title="EleGiggle" alt="EleGiggle" data-emote="EleGiggle" src="https://static-cdn.jtvnw.net/emoticons/v1/4339/1.0"/></span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="6" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1720">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    Posted on February 2016
+</div>
+<button class="quote_copy_button" data-quote-id="6">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_7">
+    <div class="list_quote_content_parent list_quote_ad_parent">
+        <div class="main_page_ad">
+  <div class="ad_block_alternative" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #866bb9; color: white; font-size: 20px; padding: 40px 10px 0 10px;">
+    (ง •̀_•́)ง ONE DAY I'LL BE A REAL AD (ง •̀_•́)ง
+  </div>
+  <div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- TwitchQuotes Main Page Resp 2 -->
+    <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-0144173183236578"
+       data-ad-slot="7416479656"
+       data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+    </div>
+</li>
+<li id="quote_li_8">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_8">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/70433/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1829" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="8" />
+</form></div>
+
+  <div class="ip_vote_count">2079</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_8">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1829" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="8" />
+</form></div>
+
+    <div class="ip_vote_count">2079</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_8">
+              <span id="quote_display_content_8"><img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/> <img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/> HOLD CTRL AND TYPE "WTF" FOR ℱ𝓪𝓷𝓬𝔂 𝓦𝓣ℱ <img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/> <img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/></span>
+<span id="quote_clipboard_copy_content_8" style="display: none"><img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/> <img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/> HOLD CTRL AND TYPE "WTF" FOR ℱ𝓪𝓷𝓬𝔂 𝓦𝓣ℱ <img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/> <img class="emoticon" original-title="PogChamp" alt="PogChamp" data-emote="PogChamp" src="https://static-cdn.jtvnw.net/emoticons/v1/88/1.0"/></span>
+  <div class="quotes_context_parent">
+    <div class="quotes_context"><span class="glyphicon glyphicon-question-sign"></span><span class="quotes_context_content" >CTRL+W closes tab and kicks you out of stream</span></div>
+  </div>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="8" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1829">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/Sneakycastroo">Sneakycastroo</a>'s stream, posted on April 2016
+</div>
+<button class="quote_copy_button" data-quote-id="8">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_9">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_9">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1714" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="9" />
+</form></div>
+
+  <div class="ip_vote_count">2618</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_9">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1714" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="9" />
+</form></div>
+
+    <div class="ip_vote_count">2618</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_9">
+              <span id="quote_display_content_9"><img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> I <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> KNOW <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> WHEN <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> THAT <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> HOTLINE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> MING <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> THAT <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> CAN <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ONLY <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> MING <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ONE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> LEE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> YOU <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> USED <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> TO <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> CALL <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ME <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ON <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> MY <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> CELLPHONE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/></span>
+<span id="quote_clipboard_copy_content_9" style="display: none"><img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> I <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> KNOW <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> WHEN <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> THAT <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> HOTLINE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> MING <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> THAT <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> CAN <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ONLY <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> MING <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ONE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> LEE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> YOU <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> USED <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> TO <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> CALL <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ME <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> ON <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> MY <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/> CELLPHONE <img class="emoticon" original-title="MingLee" alt="MingLee" data-emote="MingLee" src="https://static-cdn.jtvnw.net/emoticons/v1/68856/1.0"/></span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="9" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1714">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/reynad27">reynad27</a>'s stream, posted on November 2015
+</div>
+<button class="quote_copy_button" data-quote-id="9">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_10">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_10">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1636" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="10" />
+</form></div>
+
+  <div class="ip_vote_count">2503</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_10">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1636" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="10" />
+</form></div>
+
+    <div class="ip_vote_count">2503</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_10">
+              <span id="quote_display_content_10">I sexually Identify as an the sun. Ever since I was a boy I dreamed of slamming hydrogen isotopes into each other to make helium & light and send it throught the galaxy. People say to me that a person being a star is Impossible and I’m fucking retarded but I don’t care, I’m beautiful. I’m having a plastic surgeon inflate me with hydrogen and raise my temperature to over 6000 °C. From now on I want you guys to call me “Sol” and respect my right to give you vitamin D and probably sunburns. If you can’t accept me you’re a fusionphobe and need to check your astral privilege. Thank you for being so understanding.</span>
+<span id="quote_clipboard_copy_content_10" style="display: none">I sexually Identify as an the sun. Ever since I was a boy I dreamed of slamming hydrogen isotopes into each other to make helium & light and send it throught the galaxy. People say to me that a person being a star is Impossible and I’m fucking retarded but I don’t care, I’m beautiful. I’m having a plastic surgeon inflate me with hydrogen and raise my temperature to over 6000 °C. From now on I want you guys to call me “Sol” and respect my right to give you vitamin D and probably sunburns. If you can’t accept me you’re a fusionphobe and need to check your astral privilege. Thank you for being so understanding.</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="10" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1636">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/reynad27">reynad27</a>'s stream, posted on August 2015
+</div>
+<button class="quote_copy_button" data-quote-id="10">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_11">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_11">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/70433/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1367" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="11" />
+</form></div>
+
+  <div class="ip_vote_count">2533</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_11">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1367" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="11" />
+</form></div>
+
+    <div class="ip_vote_count">2533</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+          <div class="quote_tags"><h2 class="label label-default quote_tag ">
+  <a class="quote_tag_link" href="/copypastas/labels/salty">salty</a>
+  
+</h2></div>
+
+
+
+      <div class="quote_text_area" id="quote_text_area_11">
+              <span id="quote_display_content_11">High in orbit, the Gitraktmaet motherships descend upon the Earth. They prepare to enslave the world and mine it for all its salt, but the scanners detect an abnormally high concentration inside a tiny shack in Greece. The invasion won't be necessary. "Lock onto him with the RNG disruptor," says the captain, greedily. "Soon we shall have all the salt we need."</span>
+<span id="quote_clipboard_copy_content_11" style="display: none">High in orbit, the Gitraktmaet motherships descend upon the Earth. They prepare to enslave the world and mine it for all its salt, but the scanners detect an abnormally high concentration inside a tiny shack in Greece. The invasion won't be necessary. "Lock onto him with the RNG disruptor," says the captain, greedily. "Soon we shall have all the salt we need."</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="11" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1367">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/nl_Kripp">nl_Kripp</a>'s stream, posted on February 2015
+</div>
+<button class="quote_copy_button" data-quote-id="11">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_12">
+    <div class="chat_react_plain">
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xSmFlOoHXhs" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div><a class="btn btn-custom" href="/chat-reacts">watch more <span class="glyphicon glyphicon-play-circle"></span></a></div>
+</div>
+</li>
+<li id="quote_li_13">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_13">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1651" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="13" />
+</form></div>
+
+  <div class="ip_vote_count">2468</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_13">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/70433/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1651" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="13" />
+</form></div>
+
+    <div class="ip_vote_count">2468</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_13">
+              <span id="quote_display_content_13">👌👀👌👀👌👀👌👀👌👀 good shit go౦ԁ sHit👌 thats ✔ some good👌👌shit right👌👌th 👌 ere👌👌👌 right✔there ✔✔if i do ƽaү so my selｆ 💯 i say so 💯 thats what im talking about right there right there (chorus: ʳᶦᵍʰᵗ ᵗʰᵉʳᵉ) mMMMMᎷМ💯 👌👌 👌НO0ОଠＯOOＯOОଠଠOoooᵒᵒᵒᵒᵒᵒᵒᵒᵒ👌 👌👌 👌 💯 👌 👀 👀 👀 👌👌Good shit</span>
+<span id="quote_clipboard_copy_content_13" style="display: none">👌👀👌👀👌👀👌👀👌👀 good shit go౦ԁ sHit👌 thats ✔ some good👌👌shit right👌👌th 👌 ere👌👌👌 right✔there ✔✔if i do ƽaү so my selｆ 💯 i say so 💯 thats what im talking about right there right there (chorus: ʳᶦᵍʰᵗ ᵗʰᵉʳᵉ) mMMMMᎷМ💯 👌👌 👌НO0ОଠＯOOＯOОଠଠOoooᵒᵒᵒᵒᵒᵒᵒᵒᵒ👌 👌👌 👌 💯 👌 👀 👀 👀 👌👌Good shit</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="13" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1651">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/reynad27">reynad27</a>'s stream, posted on September 2015
+</div>
+<button class="quote_copy_button" data-quote-id="13">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_14">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_14">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1546" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="14" />
+</form></div>
+
+  <div class="ip_vote_count">2498</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_14">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1546" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="14" />
+</form></div>
+
+    <div class="ip_vote_count">2498</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_14">
+              <span id="quote_display_content_14">YESTERDAY YOU SAID TOMMOROW, Don't let your dreams be memes, Don't meme your dreams be beams, Jet fuel won't melt tomorrow's memes, DON'T LET YOUR STEEL MEMES BE JET DREAMS</span>
+<span id="quote_clipboard_copy_content_14" style="display: none">YESTERDAY YOU SAID TOMMOROW, Don't let your dreams be memes, Don't meme your dreams be beams, Jet fuel won't melt tomorrow's memes, DON'T LET YOUR STEEL MEMES BE JET DREAMS</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="14" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1546">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/imaqtpie">imaqtpie</a>'s stream, posted on July 2015
+</div>
+<button class="quote_copy_button" data-quote-id="14">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_15">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_15">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/25/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1544" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="15" />
+</form></div>
+
+  <div class="ip_vote_count">2492</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_15">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1544" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="15" />
+</form></div>
+
+    <div class="ip_vote_count">2492</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_15">
+              <span id="quote_display_content_15">( ͠° ͟ʖ ͡°) OVERCONFIDENCE IS A SLOW AND INSIDIOUS KILLER ( ͠° ͟ʖ ͡°)</span>
+<span id="quote_clipboard_copy_content_15" style="display: none">( ͠° ͟ʖ ͡°) OVERCONFIDENCE IS A SLOW AND INSIDIOUS KILLER ( ͠° ͟ʖ ͡°)</span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="15" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1544">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/nl_Kripp">nl_Kripp</a>'s stream, posted on July 2015
+</div>
+<button class="quote_copy_button" data-quote-id="15">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_16">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_16">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1643" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="16" />
+</form></div>
+
+  <div class="ip_vote_count">2453</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_16">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1643" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="16" />
+</form></div>
+
+    <div class="ip_vote_count">2453</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+        
+
+
+      <div class="quote_text_area" id="quote_text_area_16">
+              <span id="quote_display_content_16">I WILL NOW TRANSFORM THIS HUMAN INTO A CAT╰( ͡° ͜ʖ ͡° )つ──☆ -> -> -> <img class="emoticon" original-title="Kappa" alt="Kappa" data-emote="Kappa" src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0"/> <img class="emoticon" original-title="Keepo" alt="Keepo" data-emote="Keepo" src="https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0"/> <img class="emoticon" original-title="CoolCat" alt="CoolCat" data-emote="CoolCat" src="https://static-cdn.jtvnw.net/emoticons/v1/58127/1.0"/></span>
+<span id="quote_clipboard_copy_content_16" style="display: none">I WILL NOW TRANSFORM THIS HUMAN INTO A CAT╰( ͡° ͜ʖ ͡° )つ──☆ -> -> -> <img class="emoticon" original-title="Kappa" alt="Kappa" data-emote="Kappa" src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0"/> <img class="emoticon" original-title="Keepo" alt="Keepo" data-emote="Keepo" src="https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0"/> <img class="emoticon" original-title="CoolCat" alt="CoolCat" data-emote="CoolCat" src="https://static-cdn.jtvnw.net/emoticons/v1/58127/1.0"/></span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="16" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1643">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/StrifeCro">StrifeCro</a>'s stream, posted on August 2015
+</div>
+<button class="quote_copy_button" data-quote-id="16">copy</button>
+      </div>
+    </div>
+</li>
+<li id="quote_li_17">
+    <div class="list_quote_content_parent list_quote_ad_parent">
+        <div class="main_page_ad">
+  <div class="ad_block_alternative" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #866bb9; color: white; font-size: 20px; padding: 40px 10px 0 10px;">
+    (ง •̀_•́)ง ONE DAY I'LL BE A REAL AD (ง •̀_•́)ง
+  </div>
+  <div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- TwitchQuotes Main Page Resp 3 -->
+    <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-0144173183236578"
+       data-ad-slot="5660544851"
+       data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+    </div>
+</li>
+<li id="quote_li_18">
+
+      <div class="quote_vote_area hidden-xs" id="quote_ip_like_18">
+
+    <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/1902/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1576" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="18" />
+</form></div>
+
+  <div class="ip_vote_count">2418</div>
+</div>
+
+<div class="quote_vote_area_mobile visible-xs" id="quote_ip_like_18">
+  <div class="quote_vote_area_mobile_child">  
+      <div class="ip_like_form_parent"><form class="new_ip_like" id="new_ip_like" action="/ip_likes" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+  <button name="button" type="submit">
+    <img src='https://static-cdn.jtvnw.net/emoticons/v1/74510/1.0'/>
+</button>  <input type="hidden" name="quote_id" id="quote_id" value="1576" />
+<input type="hidden" name="quote_dom_id" id="quote_dom_id" value="18" />
+</form></div>
+
+    <div class="ip_vote_count">2418</div>
+  </div>
+</div>
+
+    <div class="list_quote_content_parent">
+          <div class="quote_tags"><h2 class="label label-default quote_tag ">
+  <a class="quote_tag_link" href="/copypastas/labels/plebs-vs-subs">plebs vs subs</a>
+  
+</h2></div>
+
+
+
+      <div class="quote_text_area" id="quote_text_area_18">
+              <span id="quote_display_content_18"><img class="emoticon" original-title="4Head" alt="4Head" data-emote="4Head" src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0"/> [̲̅$̲̅(̲̅5̲̅)̲̅$̲̅] Look subs, I have more money than you <img class="emoticon" original-title="4Head" alt="4Head" data-emote="4Head" src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0"/></span>
+<span id="quote_clipboard_copy_content_18" style="display: none"><img class="emoticon" original-title="4Head" alt="4Head" data-emote="4Head" src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0"/> [̲̅$̲̅(̲̅5̲̅)̲̅$̲̅] Look subs, I have more money than you <img class="emoticon" original-title="4Head" alt="4Head" data-emote="4Head" src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0"/></span>
+<div class="quotes_list_stream_name_date">
+  <span class="glyphicon glyphicon-edit quote_link copy_clipboard" data-dom-id="18" title="Copy to Clipboard"></span>
+  <a class="quote_link" href="/copypastas/1576">
+    <span class="glyphicon glyphicon-link" title="Link to quote"></span>
+</a>    <a style="color:#6040a1" href="/streams/imaqtpie">imaqtpie</a>'s stream, posted on July 2015
+</div>
+<button class="quote_copy_button" data-quote-id="18">copy</button>
+      </div>
+    </div>
+</li>
+
+    </ul>
+    <div class="paginate_parent_bottom"><ul class="pagination"><li class="previous disabled"><a class="previous disabled">&laquo;</a></li> <li class="active"><a class="active">1</a></li> <li><a rel="next" href="/copypastas?page=2&amp;popular=true">2</a></li> <li><a href="/copypastas?page=3&amp;popular=true">3</a></li> <li><a href="/copypastas?page=4&amp;popular=true">4</a></li> <li><a href="/copypastas?page=5&amp;popular=true">5</a></li> <li><a href="/copypastas?page=6&amp;popular=true">6</a></li> <li><a href="/copypastas?page=7&amp;popular=true">7</a></li> <li><a href="/copypastas?page=8&amp;popular=true">8</a></li> <li><a href="/copypastas?page=9&amp;popular=true">9</a></li> <li class="disabled"><a>&hellip;</a></li> <li><a href="/copypastas?page=112&amp;popular=true">112</a></li> <li><a href="/copypastas?page=113&amp;popular=true">113</a></li> <li class="next"><a class="next" rel="next" href="/copypastas?page=2&amp;popular=true">&raquo;</a></li></ul></div>
+  </div>
+</div>
+      </div>
+      <div id="footer" style="padding: 18px 0; border-top: 1px solid #dde8e8; position: absolute; bottom: 0; width: 100%">
+  <div style="width: 90%; max-width: 1000px; margin: 0 auto">
+    <p style="font-weight: bold; font-size: 24px; color: #888">TwitchQuotes</p>
+    <div id="footer_links">
+      <a href="/">Latest Copypastas</a>
+      <a href="/copypastas?popular=true">Popular Copypastas</a>
+      <a href="/quotes/search">Search Copypastas</a>
+      <a href="/copypastas/ascii-art">ASCII Art</a>
+      <a href="/emoticons">Twitch Chat Emoticons</a>
+      <a href="/builder">Copypasta Builder</a>
+      <a href="mailto:twitchquotes@outlook.com">Contact Us</a>
+    </div>
+    <p style="color: #888; font-size: 12px">Copyright 2016 © TwitchQuotes. All rights reserved.</p>
+  </div>
+</div>
+    <script src="/assets/application-49badc015d1ebc190bb74628e4f5f49a00a1928cde23a6a5289a359858a4f193.js"></script>
+    
+  </body>
+</html>
