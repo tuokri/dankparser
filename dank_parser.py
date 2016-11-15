@@ -53,7 +53,7 @@ def strip_nlcr(string):
 
 
 def get_twitchquotes_urls():
-    """Forgive me for this function. Returns a list of twitchquotes urls."""
+    """Forgive me for this function. Generates a list of twitchquotes urls."""
     
     urls = []
     base = "http://www.twitchquotes.com/copypastas?page=XXX&popular=true"
